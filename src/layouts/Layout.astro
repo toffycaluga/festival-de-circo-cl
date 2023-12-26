@@ -1,0 +1,73 @@
+---
+interface Props {
+	title: string;
+}
+
+const { title } = Astro.props;
+import Footer from "../components/Footer.astro";
+---
+
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="description" content="Astro description" />
+		<meta name="viewport" content="width=device-width" />
+		<link rel="icon" type="image/svg+xml" href="/favicon.ico" />
+		<meta name="generator" content={Astro.generator} />
+		<title>{title}</title>
+	</head>
+	<body>
+		<section id="page-wrapper">
+			<slot />
+		</section>
+		<Footer />
+	</body>
+	<script
+		src="https://kit.fontawesome.com/166fe20303.js"
+		crossorigin="anonymous"></script>
+</html>
+<style is:global>
+	:root {
+		--accent: 136, 58, 234;
+		--accent-light: 224, 204, 250;
+		--accent-dark: 49, 10, 101;
+		--accent-gradient: linear-gradient(
+			45deg,
+			rgb(var(--accent)),
+			rgb(var(--accent-light)) 30%,
+			white 60%
+		);
+	}
+	html {
+		font-family: system-ui, sans-serif;
+		/* background: #13151a; */
+		background-size: 224px;
+	}
+	#page-wrapper {
+		position: relative;
+	}
+	#page-wrapper:before {
+		content: "";
+		background-image: url("static/img/patron.png");
+		opacity: 0.4;
+		top: 0;
+		left: 0;
+		bottom: 0;
+		right: 0;
+		position: absolute;
+		z-index: -1;
+		background-size: 100px auto;
+	}
+	code {
+		font-family:
+			Menlo,
+			Monaco,
+			Lucida Console,
+			Liberation Mono,
+			DejaVu Sans Mono,
+			Bitstream Vera Sans Mono,
+			Courier New,
+			monospace;
+	}
+</style>
