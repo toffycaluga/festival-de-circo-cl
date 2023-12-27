@@ -1,0 +1,92 @@
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <div class="container">
+        <a class="navbar-brand" href="#">
+            <img
+                src="favicon.ico"
+                alt=""
+                width="30"
+                height="24"
+                class="d-inline-block align-text-top"
+            />
+             Festival de circo Chile
+        </a>
+        <div class="d-flex">
+            <button
+                class="navbar-toggler"
+                type="button"
+                data-toggle="collapse"
+                data-target="#navbarNav"
+                aria-controls="navbarNav"
+                aria-expanded="false"
+                aria-label="Toggle navigation"
+            >
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="#">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Nuestra Historia</a>
+                    </li>
+                    <!-- <li class="nav-item">
+                        <details>
+                            <summary class="nav-item">Galeria</summary>
+                            <ul>
+                                <li><a href="#">Festival 2022</a></li>
+                                <li><a href="#">Festival 2023</a></li>
+                            </ul>
+                        </details>
+                    </li> -->
+                    <li class="nav-item">
+                        <a href="#" class="nav-link">Galeria</a>
+                    </li>
+                    <li class="nav-item">
+                        <a
+                            class="nav-link disabled"
+                            href="#"
+                            tabindex="-1"
+                            aria-disabled="true">Disabled</a
+                        >
+                    </li>
+                </ul>
+                <a
+                    class="btn btn-outline-success"
+                    href="https://festivapp-b85984842b30.herokuapp.com/users/sign_in"
+                    >Postular</a
+                >
+            </div>
+        </div>
+    </div>
+</nav>
+
+<!-- Bootstrap JS and Popper.js scripts -->
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+<script
+    src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+></script>
+<script
+    src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+></script>
+
+<style>
+    .navbar-brand img {
+        margin-right: 5px;
+    }
+
+    details summary {
+        list-style: none;
+    }
+
+    details summary ul {
+        text-decoration: none;
+        padding-left: 0;
+        margin-bottom: 0;
+    }
+
+    .navbar-toggler-icon {
+        border: 1px solid #28a745;
+    }
+</style>
